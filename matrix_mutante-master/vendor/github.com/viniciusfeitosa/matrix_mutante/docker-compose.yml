@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  mutants_db:
+    image: redis
+    ports:
+     - "6379:6379"
+    healthcheck:
+      test: exit 0
+    restart: always
